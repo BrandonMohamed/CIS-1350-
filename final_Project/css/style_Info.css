@@ -1,0 +1,65 @@
+body > header> img {
+   height: auto;
+   width: auto;
+}
+/* Flex Layout */
+
+body {
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: column nowrap;
+    flex-flow: column nowrap;
+ }
+ 
+ header, footer {
+    -webkit-flex-shrink: 0;
+    flex-shrink: 0;
+ }
+ 
+ div#container {
+    -webkit-flex: 1 0 auto;
+    flex: 1 0 auto;
+ }
+
+
+ article {
+    font-family: 'Times New Roman', Times, serif;
+    margin: 1px;
+    color: white;
+ }
+ 
+ article h1 {
+    font-size: 4em;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    margin-bottom: 20px;
+    color:red;
+ }
+ 
+ article h2 {
+    font-size: 1.9em;
+    letter-spacing: 0.05em;
+    line-height: 1em;
+    margin-bottom: 10px;
+    color: white;
+ }
+ 
+ article p {
+    line-height: 1em;
+    font-size: 1.3em;
+    margin: 1px 1px 10px 1px;
+    color: white;
+ }
+ 
+ article ol {
+    font-size: 1em;
+    line-height: 1em;
+    margin: 20px;
+    color: white;
+ }
+ 
+ article ol li {
+    margin-bottom: 10px;
+    color: white;
+ }
+

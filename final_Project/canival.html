@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Brandon Mohamed Final Project</title>
+<meta charset="utf-8"/>
+<meta name="description" content="This is my final project.">
+<meta name="keywords" content="Food, Beachs, Canival, History"/>
+<meta name="viewpoint" content="width=device-width, initial-scale=1"/>
+<link href="css/style.css" rel="stylesheet" />
+<link href="css/style_Canival.css" rel="stylesheet" />
+</head>
+
+<body>
+    <header>
+      <nav class="horizontalNavigation">
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="cuisine.html">Cuisine</a></li>
+            <li><a href="canival.html">Canival</a></li>
+            <li><a href="music.html">Music</a></li>
+            <li><a href="Information.html">Info</a></li>
+         </ul>
+       </nav>
+    </header>
+
+
+    <section>
+        <figure><img src="images/canivalCostume.jpg" alt="imgFlag" />
+            <figcaption>(One of many colourful costumes)</figcaption>
+        </figure>
+      <h1>Canival</h1>
+      <p>What is carnival in Trinidad and Tobago? Trinidad and Tobago Carnival kicks off early Monday
+            morning before sunrise, or late Sunday night, with J’Ouvert which is a sunrise parade.
+            Monday and Tuesday of carnival are just two days of craziness. Trinidadians are party
+            animals and will spend carnival drinking, dancing and socialising all day and all night long. 
+            Trinidad and Tobago Carnival is full of vibrant colourful parades and costumes which is the
+            highlight of carnival.The origins of Trinidad and Tobago started in the 18th century by the
+            French who had colonised the country.The French brought their cultural traditions and language
+            to the island and one of the traditions were private parties and masquerade balls called fetes.
+            The African slaves were forbidden from attending these celebrations so instead they held their
+            own parties which were called canboulay. During their canboulay celebrations the slaves used to
+            mock the behaviour and outfits of their masters which led to the creation of the ‘Mas’.</p>
+            <p>All information is need *</p>
+
+      <form id="survey" method="Survey">
+          <fieldset id="custInfo">
+              <legend> Personal Information</legend>
+            <div class="formRow">
+            <label for="name">Name*</label>
+            <input name="custName" id="name" type="text" placeholder="First and Last name" required/>
+            </div>
+
+            <div class="formRow">
+            <label for="city">City*</label>
+            <input name="custCity" id="city" type="text" value="" />
+            </div>
+
+            <div class="formRow">
+            <label for="country">Country *</label>
+            <input name="custState" id="state" type="text" value="" />
+            </div>
+
+            <div class="formRow">
+            <label for="phone">Phone number *</label>
+            <input name="custPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" />
+            </div>
+
+            <div class="formRow">
+            <label for="mail"> E-mail *</label>
+            <input name="custEmail" id="phone" type="email"/>
+            </div>
+
+            <div class="formRow">
+                <label for="info">What group are interested in? *
+                <br />
+                </label>
+                <select name="infoSrc" id="info" size="5" multiple>
+                    <option value="Tribe"> Tribe Carnival</option>
+                    <option value="Utopia"> Utopia Mas</option>
+                    <option value="Pure"> Pure Carnival</option>
+                    <option value="Bliss"> Bliss Canival</option>
+                    <option value="Yuma"> Yuma Vibe</option> 
+                </select>
+            </div>
+
+            <div class="formRow">
+               <label>Male or Female costume * </label>
+               <fieldset class="optGroup">
+                   <label for="fYes"> Male </label>
+                   <input name="sCostume" id="Fyes" value="yes" type="radio"/>
+                   <label for="fNo">Female</label>
+                   <input name="sCostume" id="FNo" value="no" type="radio"/>
+               </fieldset>
+           </div>
+
+            <div class="formRow">
+                <label for="dineSpin"> Age *</label>
+                <input name="dineOut" id="dineSpin" type="number"
+                value="1" step="1" min="0" max="100"/>
+            </div>
+
+           </fieldset>
+
+          <fieldset id="expInfo">
+              <legend>Parade Information</legend>
+
+            <div class="formRow">
+                <label for="fit"> Fitting Day *</label>
+                <input name="fittingDate" id="fit" type="date"/>
+            </div>
+
+            <div class="formRow">
+                <label for="order"> location on walk *</label>
+                <select name="orderType" id="order">
+                    <option value="left"> Left</option>
+                    <option value="back"> Back</option>
+                    <option value="front" selected>Front</option>
+                    <option value="Right">Right</option>
+                </select>
+            </div>
+
+            <div class="formRow">
+                <label>What day do you want to walk? * </label>
+                <fieldset class="optGroup">
+                    <label for="monday"> Monday </label>
+                    <input name="oCorrect" id="Monday" value="yes" type="radio"/>
+                    <label for="cNo">Tuesday</label>
+                    <input name="oCorrect" id="Tuesday" value="no" type="radio"/>
+                </fieldset>
+            </div>
+
+            <div class="formRow">
+                <label>After party information *</label>
+                <fieldset class="optGroup">
+                    <label for="hYes"> Yes </label>
+                    <input name="foodHot" id="hYes" value="yes" type="radio"/>
+                    <label for="fNo">No</label>
+                    <input name="foodHot" id="hNo" value="no" type="radio"/>
+                </fieldset>
+            </div>
+
+         <label for="commBox">Tell us more</label>
+         <textarea name="custExp" id="commBox"></textarea>   
+
+          </fieldset>
+
+          <div id="buttons">
+              <input type="submit" value="Submit My Information"/>
+              <input type="reset" value="Cancel"/>
+          </div>
+
+      </form>
+   </section>
+
+    <footer>
+      Trinidad and Tobago &copy; ToDeBone 
+     </footer>
+</body>

@@ -1,0 +1,85 @@
+figure img{
+    display: block;
+    width: 35%;
+    float: left;
+}
+figure figcaption{
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    padding: 45px 1px;
+    text-align: left;
+
+}
+
+
+  h1{
+    margin: 0.1em;
+    padding: 1rem;
+    color: red;
+  }
+ 
+  /* Form Layout Styles */
+
+div.formRow{
+    display: flex;
+    flex-flow: row wrap;
+    margin: 7px 2px;
+}
+
+div.formRow > * {
+    flex: 1 2 2px;
+}
+
+form#survey{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+form#survey > fieldset{
+    background-color: white;
+    border-radius: 25px;
+    flex: 1 1 300px;
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* Legend Styles */
+
+legend{
+    background-color: rgb(179, 20, 25);
+    color: white;
+    padding: 5px;
+    font-style: oblique;
+    font-size: 1.4em;
+}
+
+/* Text Area Styles */
+
+textarea{
+    margin-top: 12px;
+    height: 100px;
+    width: 95%;
+}
+
+/* Spinner Styles */
+
+div.formRow > input#dineSpin{
+    flex: 0 0 45px;
+} 
+
+/* Form Button Styles */
+
+div#buttons {
+    text-align: center;
+    width: 100%;
+}
+
+input[type='submit'], input[type='reset'] {
+    font-size: 1.3em;
+    padding: 15px;
+    margin: 25px;
+}
+
+

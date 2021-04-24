@@ -1,0 +1,30 @@
+/* Grid Styles for Page Body */
+body{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-areas:"header   header"
+                        "intro    Dishes"
+                        "articles Dishes"
+                        "footer   footer" ;
+    grid-column-gap: 10px ;
+}
+
+body > header{
+    grid-row: 1;
+    grid-column: 1/-1;
+}
+
+body > article {grid-area:intro;}
+body > aside   {grid-area:Dishes;}
+body > section {grid-area:articles;}
+body >footer   {grid-area:footer;}
+/* Grid Styles for Nested Grid */
+
+section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+section > h1{
+    grid-area: 1/1/2/3;
+}

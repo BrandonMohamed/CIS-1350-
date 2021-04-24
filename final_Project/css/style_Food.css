@@ -1,0 +1,77 @@
+
+/* Heading Styles */
+
+
+h1 {
+   text-indent: 1.5em;
+}
+
+body > header h1 {
+   font-size: 2.9em;
+   line-height: 2.1em;
+   font-family: 'Times New Roman', Times, serif;
+   letter-spacing: 0.2em;
+   text-align: center;
+   font-weight: normal;
+   color:red;
+}
+
+body > article > h1, body > section > h1, body > aside > h1, body > section > article > h1 {
+   font-family:'Times New Roman', Times, serif;
+   padding: 0.1em 0;
+}
+
+body > article > h1, body > section > h1, body > aside > h1 {
+   font-size: 2.1em;
+   background-color: rgb(0, 0, 0);
+   color: rgb(255, 255, 255);
+}
+
+
+section > article > h1 {
+   font-size: 2.1em;
+}
+
+/* Paragraph Styles */
+
+p {
+   margin: 1em;
+   font-size: 1.5em;
+}
+
+/* Left Column Styles */
+
+img {
+   width: 100%;
+   display: block;
+}
+
+/* Right Column Styles */
+
+aside {
+   background-color: rgb(0, 0, 0);
+}
+
+
+aside > h1 {
+   text-align: center;
+   background-color: rgb(247, 239, 239);
+   color: rgb(201, 201, 201);
+}
+
+dl {
+   font-size: 1.5em;
+}
+
+dl > dt {
+   color:white;
+   margin: 1em;
+   font-family:'Times New Roman', Times, serif;
+}
+
+dl > dd {
+   margin: 0 1.1em 0 0.5em;
+   color: white;
+   font-family: 'Times New Roman', Times, serif;
+}
+
